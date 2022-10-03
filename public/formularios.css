@@ -1,0 +1,67 @@
+.contenedor-flex-delform{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5rem;
+}
+
+.formulario_de_registro{
+
+    background-color: rgb(226, 226, 226);
+    margin: 4rem;
+    padding: 2rem;
+    border-radius: 0.5rem;
+
+
+}
+.titulo{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.form-registro{
+
+    height: 2rem;
+    width: 18rem;
+    margin-bottom: 1rem;
+    border: none;
+    padding: 1rem;
+    border-radius: 3px;
+    
+}
+
+.estilos_para_check label {
+    padding: 1rem;
+    margin-bottom: 5rem;
+}
+
+.estilos_para_check input{
+    margin-bottom: 1rem;
+    margin-top:1rem
+}
+
+.estilo-botones{
+    display: grid;
+   
+
+}
+.estilo-botones button{
+margin: 0.5rem;
+background-color: dodgerblue;
+border:none;
+color: white;
+padding: .5rem;
+border-radius: 5%;
+
+}
+
+.cambio-de-color:hover{
+   background-color:  #0022AA;
+   transition:0.5s
+}
+@media screen and (max-width:428px){
+
+    .formulario_de_registro{
+        margin:1rem
+    }
+
+}

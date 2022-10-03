@@ -1,0 +1,366 @@
+/*---------CUESTIONES GENERALES-------*/
+/*html,body{
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+    display: inherit;
+
+ } */
+*{                                    
+    margin: 0px;
+    padding: 0px;    
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    
+
+    font-family: Roboto ;     
+}
+.tamaño-fuente-precio{
+    font-size: 18px;
+}
+.tipografia-Basado-Oferta{
+    font-size: 24px;
+    
+}
+
+/*-------------HEADER------------*/
+header{
+    background-color:  #EAC926; 
+    padding: 1rem;
+    
+}
+
+.burger-menu{
+    
+    background-color: #1259c3;
+    height: 3rem;
+    width: 3rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    border-radius: 30%;
+    position: absolute;
+    top:9rem;
+    margin-left: 11.5rem;
+    display: none;
+}
+
+.burger-menu-activo{
+    display:block
+}
+
+
+.contenedor-flex1,
+.contenedor-flex2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+
+.fa-magnifying-glass{
+    position: relative;
+    right: 2.5rem;
+    top:.5rem  
+}
+
+.compra_en_cuotas{
+    display: flex;
+}
+
+.barradebusqueda{
+    display: flex;
+}
+
+.magnifying-glass{
+    position:absolute;
+}
+
+.logo-mercado-liebre img{
+    width: 25rem;
+
+}
+.contenedor-flex1 .input-busqueda{
+    height: 2rem;
+    width: 25rem;
+    margin-bottom: 1rem;   
+}
+.contenedor-flex2 .enlaces,
+.contenedor-flex2 .enlaces_de_registros {
+    display:flex;
+    padding-left: 2rem;
+}
+
+.contenedor-flex2 .enlaces li,
+.contenedor-flex2 .enlaces_de_registros li
+{
+    padding-left: 3rem;
+}
+
+
+
+/*----(el banner no lo puse dentro del header-----*/
+.banner_container{
+    width: 100%;
+    max-width: 1500px;
+    line-height:0;
+    margin: 0 auto;
+}
+
+
+
+.banner_container img{
+    width: 100%;
+    height: auto;
+}
+/*-------------MAIN-----------*/
+.zoom{
+    transition: transform .4s;
+}    
+.zoom:hover{
+    transform: scale(1.1);
+}
+
+img{
+    width: 500;
+    height: 300;
+    box-shadow: 1px;;
+}
+
+.titulo_1{
+    display: flex;
+    color:#666;
+    background-color: #ebebeb;
+    justify-content: center;
+    font-size: 24px;
+    padding-top: 30px;
+}
+
+.articulo{
+    padding: 100px;
+}
+
+.display_container_main {
+    padding: 5px;
+    display: flex;
+    margin: 0;
+   
+    background-color: #ebebeb;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 20px;
+   
+    justify-content: center;
+    
+}
+.container_flex_icono_camioneta{
+    display: flex;
+    
+    justify-content: end;
+   
+    z-index: 1;
+}
+.fa-truck-arrow-right{
+    position: absolute;
+    margin-top: 220px;
+    margin-left: 180px;
+    color:#39b54a;
+    border: solid 3px #39b54a;
+    border-radius:100px ;
+    padding: 12px;
+    height: 45px;
+    width: 45px;
+    background-color: white;
+    transition: all 2s
+   
+}
+
+
+
+.fa-truck-arrow-right:hover{
+    transform: rotate(-100deg)
+
+}
+
+
+
+.display_container_main .articulo{
+    
+    border: 1px ;
+    width: 300px;
+    height: 400px;
+    background-color:  rgb(255, 255, 255);
+    
+    border-radius: 5px;
+    padding: 40px;
+    margin: 10px;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);   
+}
+
+.display_container_main .articulo img{
+    border-bottom: 1px solid #ebebeb;
+    width: 220px;
+    height: 240px;
+}
+
+
+
+.articulo p{
+    color: #39b54a;
+    font-size: 16px;
+
+}
+
+/*------------FOOTER----------*/
+
+footer{
+    display: flex;
+    background-color: rgb(196, 196, 196);
+    padding: 15px;
+    padding-top: 40px;
+    flex-direction: column;
+    text-align: center;
+
+}
+
+footer h5{
+   
+    font-size: 12px;
+    text-align: center;
+    
+}
+
+
+
+footer.section{
+    display: flex;
+    margin-top: 3px;
+    margin-bottom:3px;
+}
+
+.tarjeta,
+.envio,
+.seguridad
+{
+    margin-bottom: 20px
+}
+
+#class_copyright{
+    color: grey;
+    
+}
+
+/*---------------ICONOS DE FONT AWESOME DE FOOTER----------------*/
+.fa-user-shield,
+.fa-gift,
+.fa-credit-card{
+color:#1259c3;
+font-size: 2rem;
+margin-bottom: 10px;
+}
+
+
+.fa-gift:hover{
+    color:rgb(0, 2, 128);
+    transition: .5s;
+}
+.fa-user-shield:hover{
+    color:rgb(0, 2, 128);
+    transition: .5s;
+}
+.fa-credit-card:hover{
+    color:rgb(0, 2, 128);
+    transition: .5s;
+}
+
+@media screen and (min-width:1024px){
+    footer  {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
+  
+}
+}
+
+
+@media screen and (max-width:942px){
+
+    .logo-mercado-liebre img{
+        width: 12rem;
+    }
+    .contenedor-flex1 .input-busqueda{
+        height: 1.5rem;
+        width: 14rem;
+        margin-bottom: 1rem; 
+        margin-left:3rem  ;
+    }
+
+    header{
+        font-size: 0.8rem;
+    }
+
+    .contenedor-flex2 .enlaces li,
+    .contenedor-flex2 .enlaces_de_registros li {
+        display:flex;
+        padding-left: 1rem;
+    }
+
+    .compra_en_cuotas{
+        display: flex;
+        margin-bottom: 1rem;
+    }
+    
+}
+
+@media screen and (max-width:428px){
+
+    .contenedor-flex2{
+        display: none;
+    }
+
+    header{
+        padding-bottom: 120px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .compra_en_cuotas{
+        position: absolute;
+        margin-top: 140px;
+        margin-left: 100px;
+    }
+
+    .barradebusqueda .input-busqueda{
+        right:0px;
+        height: 35px;
+        width: 160px;
+        margin-left: 1rem;
+        
+        
+        
+       
+    }
+
+    .fa-magnifying-glass{
+        margin-top: .3rem;
+        margin-left: 1rem;
+        color: #666;
+    }
+
+    .barradebusqueda{
+
+
+        width: 200px;
+    }
+
+    .burger-menu{
+        display: block;
+        
+        display: flex;
+    }
+    
+    
+}
